@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Commander's Compendium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Commander's Compendium</h1>
+        <p>A Definitive Guide to the Elite Dangerous Third-Party Tool Ecosystem</p>
+    </header>
+
+    <div class="container">
+        <div class="content-section" id="introduction">
+            <h2>Introduction</h2>
+            <p>Elite Dangerous's vast galaxy has inspired an extraordinary ecosystem of third-party tools created by the community. These applications transform the game from a solitary experience into a deeply interconnected, data-rich universe that many commanders consider essential to their gameplay.</p>
+        </div>
+
+        <div class="content-section" id="about">
+            <h2>About This Compendium</h2>
+            <p>This guide consolidates the scattered landscape of Elite Dangerous third-party tools into one accessible reference. Each tool is categorized by function and explained in plain language, helping commanders discover the right applications for their playstyle and understand what each one actually does.</p>
+            <p>Part I covers currently operational tools, while Part II archives historical tools that are now defunct or superseded.</p>
+        </div>
+
+        <div id="filter-container" class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="platforms">Platforms</button>
+            <button class="filter-btn" data-filter="connectors">Data Connectors</button>
+            <button class="filter-btn" data-filter="shipyard">Shipyard</button>
+            <button class="filter-btn" data-filter="navigation">Navigation</button>
+            <button class="filter-btn" data-filter="career">Career</button>
+            <button class="filter-btn" data-filter="immersion">Immersion</button>
+        </div>
+
+        <div id="operational-tools">
+            <h2>Part I: The Commander's Active Toolkit</h2>
+            
+            <section id="platforms" class="category-section">
+                <h3>Foundational Platforms</h3>
+                <div class="tool-card" data-category="platforms">
+                    <div class="tool-title"><a href="https://inara.cz/" target="_blank" rel="noopener noreferrer"><h4>Inara</h4></a></div>
+                    <p>The definitive "one-stop shop" for most in-game needs. A comprehensive database for finding modules, materials, engineers, and tracking your synced Commander profile, fleet, and inventory.</p>
+                </div>
+                <div class="tool-card" data-category="platforms">
+                    <div class="tool-title"><a href="https://www.edsm.net/" target="_blank" rel="noopener noreferrer"><h4>EDSM</h4></a><span class="acronym">EDSM</span></div>
+                    <p>The master of the unexplored black. EDSM (Elite Dangerous Star Map) is a massive, community-fed star map that functions as the primary record of galactic discovery, exploration logs, and expedition planning.</p>
+                </div>
+                <div class="tool-card" data-category="platforms">
+                    <div class="tool-title"><a href="https://edcodex.info/" target="_blank" rel="noopener noreferrer"><h4>EDCodex</h4></a></div>
+                    <p>The index for the entire tool ecosystem. A community-driven database of all other third-party tools, websites, guides, and projects, making it the best place to discover new utilities.</p>
+                </div>
+            </section>
+            
+            <section id="connectors" class="category-section">
+                <h3>Data Connectors</h3>
+                <div class="tool-card" data-category="connectors">
+                    <div class="tool-title"><a href="https://github.com/EDCD/EDMarketConnector" target="_blank" rel="noopener noreferrer"><h4>Elite Dangerous Market Connector</h4></a><span class="acronym">EDMC</span></div>
+                    <p>A lightweight, essential application that reads your game journal and uploads anonymized data to the EDDN, Inara, and EDSM. Its power lies in a vast and robust plugin architecture.</p>
+                </div>
+                <div class="tool-card" data-category="connectors">
+                    <div class="tool-title"><a href="https://github.com/EDDiscovery/EDDiscovery" target="_blank" rel="noopener noreferrer"><h4>EDDiscovery</h4></a><span class="acronym">EDD</span></div>
+                    <p>An all-in-one, feature-heavy alternative to EDMC. A powerful dashboard that tracks your entire career history with integrated maps, voice synthesis, and over 50 information panels.</p>
+                </div>
+                <div class="tool-card" data-category="connectors">
+                    <div class="tool-title"><a href="https://github.com/EDCD/EDDI" target="_blank" rel="noopener noreferrer"><h4>EDDI</h4></a><span class="acronym">EDDI</span></div>
+                    <p>A unique companion application that enhances immersion through audio. It acts as an intelligent ship's computer, providing spoken feedback for in-game events. Integrates seamlessly with VoiceAttack.</p>
+                </div>
+            </section>
+            
+            <section id="shipyard" class="category-section">
+                <h3>Shipyard & Outfitting</h3>
+                 <div class="tool-card" data-category="shipyard">
+                    <div class="tool-title"><a href="https://edsy.org/" target="_blank" rel="noopener noreferrer"><h4>EDSY</h4></a><span class="acronym">EDSY</span></div>
+                    <p>Widely regarded as the most accurate and actively maintained ship-building tool. EDSY (Elite Dangerous Shipyard) uses precise mathematical models for calculating ship stats.</p>
+                </div>
+                <div class="tool-card" data-category="shipyard">
+                    <div class="tool-title"><a href="https://coriolis.io/" target="_blank" rel="noopener noreferrer"><h4>Coriolis</h4></a></div>
+                    <p>A very popular ship builder, known for its clean, intuitive, and aesthetically pleasing user interface. An excellent and highly usable tool for theory-crafting any build.</p>
+                </div>
+                <div class="tool-card" data-category="shipyard">
+                    <div class="tool-title"><a href="https://siriuscorp.cc/edsa/" target="_blank" rel="noopener noreferrer"><h4>ED Ship Anatomy</h4></a></div>
+                    <p>A specialized tool providing detailed 3D models of every ship, illustrating the precise physical placement of all hardpoints and utility mounts. Vital for analyzing weapon convergence.</p>
+                </div>
+            </section>
+            
+            <section id="navigation" class="category-section">
+                <h3>Galactic Navigation</h3>
+                <div class="tool-card" data-category="navigation">
+                    <div class="tool-title"><a href="https://www.spansh.co.uk/" target="_blank" rel="noopener noreferrer"><h4>Spansh's Elite Dangerous Tools</h4></a><span class="acronym">Spansh</span></div>
+                    <p>The king of galactic route plotting. Features the essential Neutron Router, Fleet Carrier Router, Road to Riches planners, and powerful body/mining search tools.</p>
+                </div>
+                 <div class="tool-card" data-category="navigation">
+                    <div class="tool-title"><a href="https://edastro.com/" target="_blank" rel="noopener noreferrer"><h4>ED Astro</h4></a></div>
+                    <p>A sophisticated suite for visualizing exploration data. Features galactic heatmaps, the Galactic Exploration Catalogue of unique points of interest, and a Travel History Video Creator.</p>
+                </div>
+                 <div class="tool-card" data-category="navigation">
+                    <div class="tool-title"><a href="https://fleetcarrier.space/" target="_blank" rel="noopener noreferrer"><h4>Fleet Carrier Space</h4></a></div>
+                    <p>A community tool for managing and browsing fleet carriers. It collects data on carrier locations, manufactured commodities, deliveries, and routes, allowing owners to manage their assets.</p>
+                </div>
+            </section>
+
+            <section id="career" class="category-section">
+                <h3>Career-Specific Instruments</h3>
+                <div class="tool-card" data-category="career">
+                    <div class="tool-title"><a href="https://github.com/jixxed/ed-odyssey-materials-helper" target="_blank" rel="noopener noreferrer"><h4>ED Odyssey Materials Helper</h4></a><span class="acronym">EDOMH</span></div>
+                    <p>The modern standard for material tracking. This overlay tracks all materials and commodities for both Horizons and Odyssey engineering, highlighting what's needed for engineers or crafting.</p>
+                </div>
+                <div class="tool-card" data-category="career">
+                    <div class="tool-title"><a href="https://github.com/jhrinc/I.N.T.R.A." target="_blank" rel="noopener noreferrer"><h4>I.N.T.R.A.</h4></a></div>
+                    <p>A specialized web utility and EDMC plugin for finding optimal system pairs for "massacre mission stacking," a lucrative PVE combat activity. It ranks the best systems based on live EDDN data.</p>
+                </div>
+                <div class="tool-card" data-category="career">
+                    <div class="tool-title"><a href="https://edtools.cc/" target="_blank" rel="noopener noreferrer"><h4>ED Tools</h4></a></div>
+                    <p>A collection of web-based utilities that includes an invaluable Miner's Tool for finding mineral hotspots and high-sell stations, as well as tools for rare commodity trading and massacre missions.</p>
+                </div>
+                 <div class="tool-card" data-category="career">
+                    <div class="tool-title"><a href="https://github.com/Marguel/TradeDangerous" target="_blank" rel="noopener noreferrer"><h4>TradeDangerous</h4></a><span class="acronym">TD</span></div>
+                    <p>A powerful, command-line based application for dedicated traders. It features one of the most sophisticated trade run optimizers available, calculating complex, multi-hop routes to maximize profit.</p>
+                </div>
+                 <div class="tool-card" data-category="career">
+                    <div class="tool-title"><a href="https://github.com/git-Theron/BGS-Tally" target="_blank" rel="noopener noreferrer"><h4>BGS-Tally</h4></a></div>
+                    <p>An EDMC plugin for players who manipulate the Background Simulation (BGS). It meticulously tracks every action that influences minor factions, allowing squadrons to accurately measure their impact.</p>
+                </div>
+                <div class="tool-card" data-category="career">
+                    <div class="tool-title"><a href="https://www.antixenoinitiative.com/" target="_blank" rel="noopener noreferrer"><h4>Anti-Xeno Initiative (AXI) Website & Wiki</h4></a></div>
+                    <p>The definitive resource for all aspects of Anti-Xeno (AX) combat. Contains meticulously tested ship builds, detailed guides on Thargoid behavior, and up-to-date intel on the Thargoid War.</p>
+                </div>
+            </section>
+            
+            <section id="immersion" class="category-section">
+                <h3>Immersion & Interface</h3>
+                <div class="tool-card" data-category="immersion">
+                    <div class="tool-title"><h4><a href="https://voiceattack.com/" target="_blank" rel="noopener noreferrer">VoiceAttack</a> &amp; <a href="https://www.hcsvoicepacks.com/" target="_blank" rel="noopener noreferrer">HCS VoicePacks</a></h4><span class="acronym">VA</span></div>
+                    <p>VoiceAttack allows players to control their ship with spoken commands. HCS VoicePacks elevates this with professionally produced voice packs, creating a truly interactive and responsive ship AI.</p>
+                </div>
+                 <div class="tool-card" data-category="immersion">
+                    <div class="tool-title"><a href="https://github.com/BlueMystical/EDHM_UI" target="_blank" rel="noopener noreferrer"><h4>EDHM UI</h4></a><span class="acronym">EDHM</span></div>
+                    <p>A user-friendly interface for a powerful shader mod that allows for complete color customization of the in-game HUD. It offers far greater control than older methods.</p>
+                </div>
+                 <div class="tool-card" data-category="immersion">
+                    <div class="tool-title"><h4>Head Tracking (<a href="https://www.trackir.com/" target="_blank" rel="noopener noreferrer">TrackIR</a>, <a href="https://github.com/opentrack/opentrack" target="_blank" rel="noopener noreferrer">OpenTrack</a>)</h4></div>
+                    <p>Allows players to control their in-game view by moving their head. OpenTrack is a popular free, open-source alternative to the commercial TrackIR, offering a huge immersion boost for non-VR players.</p>
+                </div>
+                <div class="tool-card" data-category="immersion">
+                    <div class="tool-title"><a href="https://github.com/lekeno/mfd-cougar" target="_blank" rel="noopener noreferrer"><h4>MFD Cougar Display</h4></a></div>
+                    <p>For dedicated sim-pit builders, this application extends the ship's instrumentation onto secondary monitors or Thrustmaster MFD panels, providing real-time graphical displays for in-game events.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <div id="discontinued-tools">
+            <h2>Part II: The Digital Graveyard</h2>
+
+            <section>
+                <h3>Fallen Giants: Major Tools Now Offline</h3>
+                <div class="tool-card discontinued">
+                    <div class="tool-title"><h4>EDDB (Elite: Dangerous Database)</h4></div>
+                    <p><strong>Status: Defunct.</strong> For many years, EDDB was one of the "big three" foundational websites. Renowned for its powerful search engines for commodities, modules, and trade routes. The site was shut down in April 2023.</p>
+                </div>
+                <div class="tool-card discontinued">
+                    <div class="tool-title"><h4>ed-route.com</h4></div>
+                    <p><strong>Status: Defunct.</strong> A web-based passenger mission route optimizer. It allowed users to input multiple passenger runs to compute the best multi-mission loops. The site is no longer active.</p>
+                </div>
+            </section>
+            
+            <section>
+                <h3>Superseded: Functional but Outdated</h3>
+                <div class="tool-card superseded">
+                    <div class="tool-title"><h4>EDEngineer</h4></div>
+                    <p><strong>Status: Superseded.</strong> A once-popular overlay for tracking engineering materials in Horizons. While still functional, it has been largely replaced by <strong>ED Odyssey Materials Helper (EDOMH)</strong>, which is actively maintained and supports both Horizons and Odyssey materials.</p>
+                </div>
+                <div class="tool-card superseded">
+                    <div class="tool-title"><h4>Various HUD Color Changers (XML Method)</h4></div>
+                    <p><strong>Status: Superseded.</strong> Older tools that modified an XML file to change HUD colors. This method is now obsolete and has been replaced by EDHM UI, which offers far greater control without undesirable side effects.</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Confirmed Abandoned Projects</h3>
+                <div class="tool-card discontinued">
+                    <div class="tool-title"><h4>Elite Dangerous Controls Reference</h4></div>
+                    <p><strong>Status: Abandoned.</strong> A web script that read a player's keybinds file and displayed a visual map of their controller layout. It has not been maintained for years.</p>
+                </div>
+                <div class="tool-card discontinued">
+                    <div class="tool-title"><h4>mEDI's Elite Tools</h4></div>
+                    <p><strong>Status: Abandoned.</strong> An early all-in-one desktop utility with a routes finder, trade optimizer, and shipyard. Development ceased many years ago and it is no longer updated.</p>
+                </div>
+                <div class="tool-card discontinued">
+                    <div class="tool-title"><h4>Elite Trade Net (ETN)</h4></div>
+                    <p><strong>Status: Abandoned.</strong> An HTML5 web tool designed to compute profit-maximizing trade routes for a specific ship and loadout. The project is no longer maintained.</p>
+                </div>
+                 <div class="tool-card discontinued">
+                    <div class="tool-title"><h4>ED ToolBox (EDTB)</h4></div>
+                    <p><strong>Status: Abandoned.</strong> A feature-rich companion app that ran a local web server to provide real-time location data, maps, and logs. It has not been updated since 2017.</p>
+                </div>
+                 <div class="tool-card discontinued">
+                    <div class="tool-title"><h4>EliteBrainerous (EliteOCR)</h4></div>
+                    <p><strong>Status: Abandoned.</strong> A standalone neural OCR and voice assistant engine. It was an early attempt at reading screen text for voice commands but development has long since stopped.</p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>The Commander's Compendium - Navigating the black, together. All data compiled from community sources as of September 2025.</p>
+        </footer>
+
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
+
